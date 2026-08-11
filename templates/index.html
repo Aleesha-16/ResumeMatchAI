@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeMatch AI</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ResumeMatch AI
+        </div>
+
+        <div class="nav-text">
+            Resume Analyzer & Job Matcher
+        </div>
+
+    </nav>
+
+
+    <main class="container">
+
+        <section class="hero">
+
+            <h1>
+                Match Your Resume
+                <span>With Your Dream Job</span>
+            </h1>
+
+            <p>
+                Upload your resume and compare it with a job
+                description to discover your skill match,
+                missing skills and improvement areas.
+            </p>
+
+        </section>
+
+
+        <form
+            action="/analyze"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+
+            <div class="card">
+
+                <h2>📄 Upload Your Resume</h2>
+
+                <p>
+                    Upload your resume in PDF format.
+                </p>
+
+                <input
+                    type="file"
+                    name="resume"
+                    accept=".pdf"
+                    required
+                >
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>💼 Job Description</h2>
+
+                <p>
+                    Paste the job description below.
+                </p>
+
+                <textarea
+                    name="job_description"
+                    placeholder="Paste the job description here..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit">
+                Analyze Resume →
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Resume Analysis</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ResumeMatch AI
+        </div>
+
+        <a href="/">
+            Analyze Another
+        </a>
+
+    </nav>
+
+
+    <main class="result-container">
+
+        <h1>
+            Resume Analysis Result
+        </h1>
+
+
+        <!-- SCORE -->
+
+        <div class="score-card">
+
+            <div class="score">
+                {{ result.score }}%
+            </div>
+
+            <h2>
+                Resume Match Score
+            </h2>
+
+            <p>
+                Your resume matches
+                {{ result.score }}%
+                of the required skills.
+            </p>
+
+        </div>
+
+
+        <!-- MATCHED + MISSING -->
+
+        <div class="result-grid">
+
+
+            <div class="result-card">
+
+                <h2>
+                    ✅ Matched Skills
+                </h2>
+
+                <div class="skills">
+
+                    {% for skill in result.matched_skills %}
+
+                        <span class="matched">
+                            {{ skill }}
+                        </span>
+
+                    {% else %}
+
+                        <p>
+                            No matching skills found.
+                        </p>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <h2>
+                    ❌ Missing Skills
+                </h2>
+
+                <div class="skills">
+
+                    {% for skill in result.missing_skills %}
+
+                        <span class="missing">
+                            {{ skill }}
+                        </span>
+
+                    {% else %}
+
+                        <p>
+                            No missing skills found.
+                        </p>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RECOMMENDATIONS -->
+
+        <div class="result-card">
+
+            <h2>
+                💡 Recommendations
+            </h2>
+
+            <ul>
+
+                {% for suggestion in result.suggestions %}
+
+                    <li>
+                        {{ suggestion }}
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+
+        </div>
+
+
+        <!-- RESUME SKILLS -->
+
+        <div class="result-card">
+
+            <h2>
+                📊 Skills Found In Resume
+            </h2>
+
+            <div class="skills">
+
+                {% for skill in result.resume_skills %}
+
+                    <span class="normal">
+                        {{ skill }}
+                    </span>
+
+                {% else %}
+
+                    <p>
+                        No skills detected.
+                    </p>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
