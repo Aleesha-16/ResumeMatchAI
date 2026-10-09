@@ -45,15 +45,16 @@ ResumeMatchAI/
 ```
 
  ⚙️ **How It Works**
-Upload your resume in PDF format.
-Enter the job description.
-The application extracts text from the resume.
-It identifies matched and missing skills.
-The application displays a match percentage and improvement suggestions.
+ 
+- Upload your resume in PDF format.
+- Enter the job description.
+- The application extracts text from the resume.
+- It identifies matched and missing skills.
+- The application displays a match percentage and improvement suggestions.
 
-🌐** Live Demo**
+🌐 **Live Demo**
 
-👉 Try ResumeMatch AI: https://resumematchai-bmxt.onrender.com
+👉Try ResumeMatch AI: https://resumematchai-bmxt.onrender.com
 
 
 **Future Improvements**
