@@ -42,3 +42,30 @@ ResumeMatchAI/
 │
 └── static/
     └── style.css
+
+ ⚙️ **How It Works**
+Upload your resume in PDF format.
+Enter the job description.
+The application extracts text from the resume.
+It identifies matched and missing skills.
+The application displays a match percentage and improvement suggestions.
+
+🌐** Live Demo**
+
+👉 Try ResumeMatch AI: https://resumematchai-bmxt.onrender.com
+
+
+**Future Improvements**
+Semantic matching using advanced NLP techniques
+Support for additional resume formats
+More detailed resume analysis and recommendations
+
+
+**👩‍💻 Developed By**
+
+Aleesha
+B.Tech Information Technology Student
+Panipat Institute of Engineering & Technology (PIET)
+
+GitHub: https://github.com/Aleesha-16
+LinkedIn: https://linkedin.com/in/aleesha-8117a1320
