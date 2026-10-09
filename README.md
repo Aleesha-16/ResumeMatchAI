@@ -24,7 +24,7 @@ It allows users to upload their resume in PDF format and compare it with a job d
 - PyPDF2
 - Git & GitHub
 
-## 📂 Project Structure
+  ## 📂 Project Structure
 
 ```text
 ResumeMatchAI/
@@ -42,6 +42,7 @@ ResumeMatchAI/
 │
 └── static/
     └── style.css
+```
 
  ⚙️ **How It Works**
 Upload your resume in PDF format.
@@ -67,5 +68,5 @@ Aleesha
 B.Tech Information Technology Student
 Panipat Institute of Engineering & Technology (PIET)
 
-GitHub: https://github.com/Aleesha-16
-LinkedIn: https://linkedin.com/in/aleesha-8117a1320
+# GitHub: https://github.com/Aleesha-16
+# LinkedIn: https://linkedin.com/in/aleesha-8117a1320
