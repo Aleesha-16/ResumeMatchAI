@@ -67,8 +67,6 @@ ResumeMatchAI/
 **👩‍💻 Developed By**
 
 Aleesha
-B.Tech Information Technology Student
-Panipat Institute of Engineering & Technology (PIET)
+- B.Tech Information Technology Student
+- Panipat Institute of Engineering & Technology (PIET)
 
-# GitHub: https://github.com/Aleesha-16
-# LinkedIn: https://linkedin.com/in/aleesha-8117a1320
