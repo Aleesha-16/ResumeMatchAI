@@ -52,15 +52,16 @@ ResumeMatchAI/
 - It identifies matched and missing skills.
 - The application displays a match percentage and improvement suggestions.
 
-🌐 **Live Demo**
+## 🌐 **Live Demo**
 
-👉Try ResumeMatch AI: https://resumematchai-bmxt.onrender.com
+# 👉Try ResumeMatch AI: https://resumematchai-bmxt.onrender.com
 
 
-**Future Improvements**
-Semantic matching using advanced NLP techniques
-Support for additional resume formats
-More detailed resume analysis and recommendations
+## **Future Improvements**
+
+- Semantic matching using advanced NLP techniques
+- Support for additional resume formats
+- More detailed resume analysis and recommendations
 
 
 **👩‍💻 Developed By**
